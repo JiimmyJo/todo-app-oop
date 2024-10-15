@@ -1,6 +1,6 @@
 public class HelpCommand : Command
 {
-    public HelpCommand(string name, Program program) : base(name, program)
+    public HelpCommand(Program program) : base("help", program)
     {
     }
 
