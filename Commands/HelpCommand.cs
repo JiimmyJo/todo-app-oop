@@ -1,6 +1,10 @@
-public class HelpCommand
+public class HelpCommand : Command
 {
-    public static void Execute()
+    public HelpCommand(string name, Program program) : base(name, program)
+    {
+    }
+
+    public override void Execute(string[] commandArgs)
     {
         Console.WriteLine("Help commands:");
         Console.WriteLine("create-task - Create a task");
